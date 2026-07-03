@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Results | Student Work Navigator</title>
+  <meta name="description" content="Read student feedback and share your own experience finding a student job in Magdeburg.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><circle cx=%2212%22 cy=%2212%22 r=%2211%22 fill=%22%232f6fed%22/><polygon points=%2216.2,7.8 14.1,14.1 7.8,16.2 9.9,9.9%22 fill=%22white%22/></svg>">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#2f6fed" stroke="none"></polygon></svg></span>
+        <span class="brand-text"><strong>Student Work Navigator</strong><span>Magdeburg Edition</span></span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-types.html">Job Types</a></li>
+        <li><a href="how-to-apply.html">How to Apply</a></li>
+        <li><a href="cv-guide.html">CV Guide</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="survey-results.html" class="active">Survey Results</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Survey Results & Feedback</span></div>
+      <span class="kicker">Community</span>
+      <h1>Survey Results & Feedback</h1>
+      <p>Read what other students said, and add your own experience — your answers are saved to a shared Google Sheet to help future students.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Share your experience</h2>
+        <p>Answered honestly, your feedback helps us improve this guide and helps other international students know what to expect. It only takes a minute.</p>
+        <form class="form-card" id="feedback-form">
+          <div class="form-row">
+            <label for="f-name">Name (or first name)</label>
+            <input type="text" id="f-name" name="name" placeholder="e.g. Priya" required maxlength="120">
+          </div>
+          <div class="form-row">
+            <label for="f-country">Country of origin</label>
+            <input type="text" id="f-country" name="country" placeholder="e.g. India" maxlength="80">
+          </div>
+          <div class="form-row">
+            <label for="f-program">Study program</label>
+            <input type="text" id="f-program" name="program" placeholder="e.g. M.Sc. Data Engineering" maxlength="120">
+          </div>
+          <div class="form-row">
+            <label for="f-jobtype">Job type you found</label>
+            <select id="f-jobtype" name="jobType">
+              <option value="">Select one (optional)</option>
+              <option value="HiWi">HiWi / Research Assistant</option>
+              <option value="Werkstudent">Werkstudent</option>
+              <option value="Minijob">Minijob</option>
+              <option value="Internship">Internship / Praktikum</option>
+              <option value="Still searching">Still searching</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>How helpful was this guide?</label>
+            <div class="rating-row" id="rating-row">
+              <button type="button" class="rating-star" data-value="1" aria-label="1 star"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+              <button type="button" class="rating-star" data-value="2" aria-label="2 stars"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+              <button type="button" class="rating-star" data-value="3" aria-label="3 stars"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+              <button type="button" class="rating-star" data-value="4" aria-label="4 stars"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+              <button type="button" class="rating-star" data-value="5" aria-label="5 stars"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="">
+          </div>
+          <div class="form-row">
+            <label for="f-message">Your experience / feedback</label>
+            <textarea id="f-message" name="message" placeholder="Tell us how your job search went, or suggest what we should add..." required maxlength="2000"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+      <div class="team-note">
+        <h3>How this works</h3>
+        <p>Your response is sent directly to a Google Sheet maintained by the project team using a Google Apps Script connector &mdash; no account or sign-up needed.</p>
+        <ul class="modal-list">
+          <li>We don't collect emails or contact details unless you choose to include them in your message.</li>
+          <li>Responses may be featured (anonymised or with your first name) on the Experiences page.</li>
+          <li>This is a non-commercial university project &mdash; your data is never sold or used for advertising.</li>
+        </ul>
+        <p style="margin-bottom:0;">Questions about your data? <a href="mailto:info@studentworknavigator.de">Email the project team</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Results</span>
+        <h2>Recent Student Feedback</h2>
+        <p>The latest responses submitted by students, pulled live from our shared spreadsheet.</p>
+      </div>
+      <div class="testi-grid" id="recent-feedback">
+        <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="msg">The step-by-step guide helped me a lot with my first application. Now I'm working as a HiWi!</p><div class="testi-name">Priya, India</div></div>
+        <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="msg">I found my part-time job through the resources here. Super helpful and beginner-friendly.</p><div class="testi-name">Ahmed, Egypt</div></div>
+        <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="msg">The CV tips and interview preparation section gave me so much confidence.</p><div class="testi-name">Mei, China</div></div>
+      </div>
+      <p style="text-align:center; color:var(--text-muted); font-size:.85rem; margin-top:18px;">Showing example responses until the live feedback sheet is connected. See README.md to connect your Google Sheet.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2f6fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#2f6fed" stroke="none"></polygon></svg></span>
+            <strong>Student Work Navigator</strong>
+          </div>
+          <p class="footer-note">A guide for international students to find, understand and succeed in student jobs in Magdeburg, Germany. An OVGU student project.</p>
+          <div class="social-row">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.25h4V23h-4V8.25zM8.5 8.25h3.83v2.02h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V23h-4v-6.75c0-1.61-.03-3.68-2.24-3.68-2.25 0-2.6 1.76-2.6 3.57V23h-4V8.25z"/></svg></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
+            <a href="mailto:info@studentworknavigator.de" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="job-types.html">Job Types</a></li>
+            <li><a href="how-to-apply.html">How to Apply</a></li>
+            <li><a href="cv-guide.html">CV Guide</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Important</h4>
+          <ul>
+            <li><a href="https://www.study-in-germany.de/en/plan-your-studies/requirements/working-while-studying_71898.php" target="_blank" rel="noopener">Work Rules in Germany</a></li>
+            <li><a href="https://www.ovgu.de/unimagdeburg/en/International/International+Office-p-19998.html" target="_blank" rel="noopener">Visa &amp; Work Permit Advice</a></li>
+            <li><a href="https://www.ovgu.de/unimagdeburg/en/International/Incoming+_+Ways+to+the+University/International+Students-p-107032.html" target="_blank" rel="noopener">University Support</a></li>
+            <li><a href="survey-results.html">FAQ &amp; Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>info@studentworknavigator.de</li>
+            <li>Magdeburg, Germany</li>
+            <li><a href="about.html">About this project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 Student Work Navigator &mdash; Magdeburg Edition. A student project, not an official OVGU service.</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+<script src="js/survey.js"></script>
+</body>
+</html>

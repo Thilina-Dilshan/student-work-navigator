@@ -1,11 +1,7 @@
 // =====================================================================
-// Survey / feedback form -> Google Apps Script Web App -> Google Sheet
+// Survey / feedback form 
 // =====================================================================
-// 1. Deploy the Apps Script in /apps-script/Code.gs as a Web App
-//    (Deploy > New deployment > Web app > Execute as: Me > Who has
-//    access: Anyone). Copy the resulting /exec URL.
-// 2. Paste that URL below, replacing the placeholder string.
-// -----------------------------------------------------------------------
+
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyHNB93GXuUe_fxizWe5kRFjfZtCvpyNZggw6EWBqdAfT65E8yWR_ew7SQbxMr79uiQ/exec";
 
 document.addEventListener('DOMContentLoaded', function () {
